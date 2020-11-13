@@ -3,8 +3,10 @@
 
 int main() {
 	int fd;
+	char **a;
 
 	fd = open("/Users/burswyck/Desktop/GNL/123.txt", O_WRONLY);
-	ft_putstr_fd("123", fd);
+	get_next_line(fd, a);
+	printf(a);
 	return 0;
 }

@@ -33,55 +33,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="add files get_next_line.c get_next_line.h get_next_line_utils.c">
-      <change afterPath="$PROJECT_DIR$/123.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_atoi.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_bzero.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_calloc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_isalnum.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_isalpha.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_isascii.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_isdigit.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_isprint.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_itoa.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstadd_back.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstadd_front.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstclear.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstdelone.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstiter.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstlast.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstmap.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstnew.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_lstsize.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memccpy.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memchr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memcmp.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memcpy.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memmove.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_memset.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_putchar_fd.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_putendl_fd.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_putnbr_fd.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_putstr_fd.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_split.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strchr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strdup.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strjoin.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strlcat.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strlcpy.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strlen.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strmapi.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strncmp.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strnstr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strrchr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_strtrim.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_substr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_tolower.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/ft_toupper.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +128,7 @@
       <workItem from="1605105637854" duration="1875000" />
       <workItem from="1605123866459" duration="87000" />
       <workItem from="1605202343922" duration="950000" />
+      <workItem from="1605289733975" duration="1538000" />
     </task>
     <task id="LOCAL-00001" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
       <created>1605123917257</created>
@@ -183,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605123917257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+      <created>1605289812983</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605289812983</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,14 +219,14 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605207629961" />
-    <state x="880" y="431" key="Vcs.Push.Dialog.v2" timestamp="1605123920095">
+    <state x="880" y="431" key="Vcs.Push.Dialog.v2" timestamp="1605289816975">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="880" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605123920095" />
-    <state x="1081" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605123873868">
+    <state x="880" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605289816975" />
+    <state x="1081" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605298877065">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1081" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605123873868" />
+    <state x="1081" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605298877065" />
     <state x="945" y="326" key="run.anything.popup" timestamp="1605105748236">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
