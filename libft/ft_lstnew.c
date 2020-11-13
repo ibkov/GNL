@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/10 22:09:08 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/10 22:09:35 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*new_elem;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	if (!(new_elem = malloc(sizeof(t_list))))
+		return (0);
+	new_elem->content = content;
+	new_elem->next = 0;
+	return (new_elem);
+}

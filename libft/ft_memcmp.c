@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:07:37 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:07:41 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	const unsigned char *str1;
+	const unsigned char *str2;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	str1 = (const unsigned char*)s1;
+	str2 = (const unsigned char*)s2;
+	while (n > 0)
+	{
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
+		n--;
+	}
+	return (0);
+}

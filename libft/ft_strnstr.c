@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:12:37 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:12:39 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	unsigned int	i;
+	size_t			len_l;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	if (!haystack)
+		ft_strlen(haystack);
+	i = 0;
+	len_l = ft_strlen(needle);
+	while (haystack)
+	{
+		if (i + len_l > len)
+			return (0);
+		if (!(ft_strncmp(haystack, needle, len_l)))
+			return (char*)(haystack);
+		haystack++;
+		i++;
+	}
+	return (0);
+}

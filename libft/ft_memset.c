@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:08:32 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:08:36 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+void	*ft_memset(void *destination, int c, size_t n)
+{
+	char *dst;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	dst = destination;
+	while (n > 0)
+	{
+		*dst = c;
+		dst++;
+		n--;
+	}
+	return (destination);
+}

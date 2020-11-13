@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:07:57 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:08:01 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+void			*ft_memcpy(void *restrict dst,\
+const void *restrict src, size_t n)
+{
+	char		*d;
+	const char	*s;
+	int			i;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	if (!dst && !src)
+		return (0);
+	i = 0;
+	d = (char*)dst;
+	s = (const char*)src;
+	while (n > 0)
+	{
+		d[i] = s[i];
+		i++;
+		n--;
+	}
+	return (dst);
+}

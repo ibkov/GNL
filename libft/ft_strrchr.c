@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:12:55 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:12:58 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+char	*ft_strrchr(const char *s, int c)
+{
+	int		index;
+	int		position_last;
+	char	*new_str;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	new_str = (char*)s;
+	position_last = -1;
+	index = 0;
+	while (s[index])
+	{
+		if (s[index] == c)
+			position_last = index;
+		index++;
+	}
+	if (c == '\0')
+		return (new_str + index);
+	new_str += position_last;
+	if (position_last == -1)
+		return (0);
+	return (new_str);
+}

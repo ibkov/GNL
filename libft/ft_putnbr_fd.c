@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/12 20:09:43 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/12 20:09:46 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
+void	ft_putnbr_fd(int n, int fd)
+{
+	unsigned int	nbr;
 
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		nbr = (unsigned int)(n * -1);
+	}
+	else
+		nbr = (unsigned int)n;
+	if (nbr >= 10)
+		ft_putnbr_fd(nbr / 10, fd);
+	ft_putchar_fd((char)(nbr % 10 + 48), fd);
+}

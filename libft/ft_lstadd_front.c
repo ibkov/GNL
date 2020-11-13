@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/11/10 22:03:05 by burswyck          #+#    #+#             */
+/*   Updated: 2020/11/10 22:03:50 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
-
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	if (!new)
+		return ;
+	new->next = *lst;
+	*lst = new;
+}

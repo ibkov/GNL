@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/11 17:53:56 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:02 by burswyck         ###   ########.fr       */
+/*   Created: 2020/10/28 19:19:16 by burswyck          #+#    #+#             */
+/*   Updated: 2020/10/28 19:22:22 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_GET_NEXT_LINE_H
-#define GNL_GET_NEXT_LINE_H
+#include "libft.h"
 
-#include <stdlib.h>
-#include <fcntl.h>
-#include "libft/libft.h"
-
-int get_next_line(int fd, char **line);
-
-#endif //GNL_GET_NEXT_LINE_H
+char	*ft_strchr(const char *string, int symbol)
+{
+	while (*string != symbol && *string)
+	{
+		string++;
+	}
+	if (symbol == '\0')
+		return ((char*)string);
+	if (*string == '\0')
+		return (0);
+	return ((char*)string);
+}
