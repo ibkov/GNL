@@ -4,9 +4,13 @@
 int main() {
 	int fd;
 	char **a;
+	char buf[100];
 
-	fd = open("/Users/burswyck/Desktop/GNL/123.txt", O_WRONLY);
-	get_next_line(fd, a);
-	printf(a);
+	fd = open("/Users/burswyck/Desktop/GNL/123.txt", O_RDONLY);
+//	printf("%d\n", fd);
+//	printf("%d\n", read(fd, buf, 13));
+//	printf("%s\n",  buf);
+	get_next_line(fd, &a);
+	printf("%s", a);
 	return 0;
 }

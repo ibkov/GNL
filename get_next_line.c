@@ -14,5 +14,13 @@
 
 int get_next_line(int fd, char **line)
 {
-
+	char buffer[100];
+	**line = (char**)malloc(sizeof(char*)* 2);
+	*line = (char*)malloc(sizeof(char*) * 15);
+	while (read(fd, buffer, 10))
+	{
+		*line = buffer;
+		line++;
+	}
+	return (0);
 }
