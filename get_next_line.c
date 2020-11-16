@@ -15,16 +15,16 @@
 int get_next_line(int fd, char **line)
 {
 	char *buffer;
+	static char *str;
 
 	if (!(buffer = (char*)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 		return (-1);
 
 	line = (char**)malloc(sizeof(char*) * 2);
-//	*line = (char*)malloc(sizeof(char) * 15);
 	while (read(fd, buffer, BUFFER_SIZE))
 	{
 		
-		ft_putstr_fd(buffer, 1);
+		ft_putstr_fd(buffer, 0);
 	}
 	return (0);
 }

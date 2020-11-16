@@ -22,8 +22,9 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:home_GNL" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/home_GNL" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -40,7 +41,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="add files get_next_line.c get_next_line.h get_next_line_utils.c">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -54,6 +54,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k9GnJ4GfPm5QWBQng9veq7E4BV" />
@@ -124,11 +129,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.GNL" />
+      <item itemvalue="CMake Application.Unnamed" />
       <item itemvalue="CMake Application.GNL (1)" />
       <item itemvalue="CMake Application.GNL (2)" />
       <item itemvalue="CMake Application.GNL (3)" />
-      <item itemvalue="CMake Application.GNL" />
-      <item itemvalue="CMake Application.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -335,16 +340,5 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1010" y="610" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1605202729994" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.c</url>
-          <line>5</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
