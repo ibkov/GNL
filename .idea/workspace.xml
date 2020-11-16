@@ -19,7 +19,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:home_GNL" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
@@ -118,11 +124,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.Unnamed" />
-      <item itemvalue="CMake Application.GNL" />
       <item itemvalue="CMake Application.GNL (1)" />
       <item itemvalue="CMake Application.GNL (2)" />
       <item itemvalue="CMake Application.GNL (3)" />
+      <item itemvalue="CMake Application.GNL" />
+      <item itemvalue="CMake Application.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -146,6 +152,7 @@
       <workItem from="1605202343922" duration="950000" />
       <workItem from="1605289733975" duration="1558000" />
       <workItem from="1605348394701" duration="3097000" />
+      <workItem from="1605525387254" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
       <created>1605123917257</created>
@@ -182,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605348801587</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+      <created>1605525409050</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605525409050</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +207,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="home_GNL" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -286,10 +312,11 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1605431962396" />
-    <state x="880" y="431" key="Vcs.Push.Dialog.v2" timestamp="1605348805365">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="578" y="336" key="Vcs.Push.Dialog.v2" timestamp="1605525418044">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="880" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605348805365" />
+    <state x="578" y="336" key="Vcs.Push.Dialog.v2/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605525418044" />
     <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605372277537">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -299,11 +326,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="945" y="326" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1605105748236" />
-    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1605429800222">
+    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1605525974955">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1605429800222" />
-    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372261985" />
+    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605525974955" />
     <state x="1010" y="610" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605202729994">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

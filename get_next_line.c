@@ -19,14 +19,12 @@ int get_next_line(int fd, char **line)
 	if (!(buffer = (char*)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 		return (-1);
 
-
-
 	line = (char**)malloc(sizeof(char*) * 2);
-	*line = (char*)malloc(sizeof(char) * 15);
-	while (read(fd, buffer, 10))
+//	*line = (char*)malloc(sizeof(char) * 15);
+	while (read(fd, buffer, BUFFER_SIZE))
 	{
-		*line = buffer;
-		line++;
+		
+		ft_putstr_fd(buffer, 1);
 	}
 	return (0);
 }
