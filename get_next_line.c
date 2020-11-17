@@ -14,17 +14,24 @@
 
 int get_next_line(int fd, char **line)
 {
-	char *buffer;
-	static char *str;
+	int BUFFER_SIZE = 1;
+	char buffer[BUFFER_SIZE];
+	char *str;
+	int read_number;
+	char *p_n;
+	int flag = 1;
 
-	if (!(buffer = (char*)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
-		return (-1);
-
-	line = (char**)malloc(sizeof(char*) * 2);
-	while (read(fd, buffer, BUFFER_SIZE))
+	ft_bzero(line, 1);
+	str = (char*)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	while (flag && (read_number = read(fd, buffer, BUFFER_SIZE)))
 	{
-		
-		ft_putstr_fd(buffer, 0);
+		buffer[read_number] = '\0';
+		if ((p_n = ft_strchr(str, '\n')))
+		{
+			*p_n = '\0';
+			flag = 0;
+		}
+		str = ft_strjoin(str, buffer);
 	}
 	return (0);
 }

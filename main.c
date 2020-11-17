@@ -3,9 +3,11 @@
 
 int main() {
 	int fd;
-	char **a;
+	char *a;
 
-	fd = open("/Users/burswyck/Desktop/GNL/123.txt", O_RDONLY);
-	get_next_line(fd, a);
+	fd = open("/Users/igorkovalenko/CLionProjects/GNL/123.txt", O_RDONLY);
+	printf("%d\n", fd);
+	get_next_line(fd, &a);
+	printf("%s", a);
 	return 0;
 }
