@@ -19,5 +19,6 @@
 #include "libft/libft.h"
 
 int get_next_line(int fd, char **line);
+#define BUFFER_SIZE 30
 
 #endif //GNL_GET_NEXT_LINE_H

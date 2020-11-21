@@ -5,7 +5,7 @@ int main() {
 	int fd;
 	char *a;
 
-	fd = open("/Users/igorkovalenko/CLionProjects/GNL/123.txt", O_RDONLY);
+	fd = open("/Users/burswyck/Desktop/GNL/123.txt", O_RDONLY);
 	printf("%d\n", fd);
 	get_next_line(fd, &a);
 	printf("%s\n\n", a);
