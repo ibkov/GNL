@@ -12,29 +12,47 @@
 
 #include "get_next_line.h"
 
+char *ft_check_last(char *last, char **line)
+{
+	char *p_n;
+
+	p_n = NULL;
+	if (last)
+		if ((p_n = ft_strchr(last, '\n')))
+		{
+			*p_n = '\0';
+			*line = ft_strdup(last);
+			p_n++;
+			last = (char*)ft_strlcpy(last, p_n, ft_strlen(p_n));
+		}
+		else
+		{
+			*line = ft_strdup(last);
+			*last = '\0';
+		}
+	else
+		*line = ft_calloc(1,1);
+	return (p_n);
+}
+
 int get_next_line(int fd, char **line) {
-	long long BUFFER_SIZE = 1000000000;
-	char buffer[BUFFER_SIZE];
-	char *str;
+	char buffer[BUFFER_SIZE + 1];
 	int read_number;
 	char *p_n;
-	int flag = 1;
 	static char *last;
 
-
-	*line = "\0";
-	str = (char*) malloc(sizeof(char) * (BUFFER_SIZE + 1));
-	if (last)
-		str = ft_strjoin(last, str);
-	while (flag && (read_number = read(fd, buffer, BUFFER_SIZE))) {
+	p_n = ft_check_last(last, line);
+	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE))) {
 		buffer[read_number] = '\0';
 		if ((p_n = ft_strchr(buffer, '\n'))) {
 			*p_n = '\0';
-			last = ft_strdup(p_n + 1);
-			flag = 0;
+			p_n++;
+			last = ft_strdup(p_n);
 		}
-		str = ft_strjoin(str, buffer);
+		*line = ft_strjoin(*line, buffer);
 	}
-	*line = str;
-	return (0);
+	if (read_number || ft_strlen(last) || ft_strlen(*line))
+		return (1);
+	else
+		return (0);
 }

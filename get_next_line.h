@@ -13,6 +13,7 @@
 #ifndef GNL_GET_NEXT_LINE_H
 #define GNL_GET_NEXT_LINE_H
 
+
 #include <stdlib.h>
 #include <fcntl.h>
 #include "libft/libft.h"

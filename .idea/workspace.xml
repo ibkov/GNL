@@ -22,8 +22,9 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:home_GNL" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/home_GNL" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -43,9 +44,6 @@
       <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line.c" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605646261917</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+      <created>1605975707504</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605975707504</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +258,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="home_GNL" />
+                        <option value="origin/home_GNL" />
                       </list>
                     </value>
                   </entry>
