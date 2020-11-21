@@ -39,9 +39,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+      <change afterPath="$PROJECT_DIR$/get-next-line-testing-tools/get_next_line.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gnl-unit-test/get_next_line_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/123.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -72,7 +74,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libft" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gnl-unit-test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,6 +86,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gnl-unit-test" />
+      <recent name="$PROJECT_DIR$/get-next-line-testing-tools" />
       <recent name="$PROJECT_DIR$/libft" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -93,10 +97,10 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.GNL (4)">
-    <configuration name="GNL (1)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="CMake Application.GNL (6)">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="GNL (2)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -110,6 +114,16 @@
       </method>
     </configuration>
     <configuration name="GNL (4)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GNL (5)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GNL (6)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -137,17 +151,19 @@
     <list>
       <item itemvalue="CMake Application.GNL" />
       <item itemvalue="CMake Application.Unnamed" />
-      <item itemvalue="CMake Application.GNL (1)" />
       <item itemvalue="CMake Application.GNL (2)" />
       <item itemvalue="CMake Application.GNL (3)" />
       <item itemvalue="CMake Application.GNL (4)" />
+      <item itemvalue="CMake Application.GNL (5)" />
+      <item itemvalue="CMake Application.GNL (6)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="CMake Application.GNL (6)" />
+        <item itemvalue="CMake Application.GNL (5)" />
         <item itemvalue="CMake Application.GNL (4)" />
         <item itemvalue="CMake Application.GNL (3)" />
         <item itemvalue="CMake Application.GNL (2)" />
-        <item itemvalue="CMake Application.GNL (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +183,9 @@
       <workItem from="1605348394701" duration="3097000" />
       <workItem from="1605525387254" duration="1830000" />
       <workItem from="1605638194650" duration="3516000" />
-      <workItem from="1605644331695" duration="1560000" />
+      <workItem from="1605644331695" duration="2247000" />
+      <workItem from="1605805786373" duration="2147000" />
+      <workItem from="1605808482522" duration="2097000" />
     </task>
     <task id="LOCAL-00001" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
       <created>1605123917257</created>
@@ -211,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605525409050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+      <created>1605646261917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605646261917</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,9 +280,10 @@
     </state>
     <state x="488" y="276" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1605430228906" />
     <state x="744" y="353" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1605105720632" />
-    <state x="1006" y="500" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605106370963">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="660" y="389" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605809866101">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="660" y="389" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1605809866101" />
     <state x="1006" y="500" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1605106370963" />
     <state x="1067" y="415" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1605105717866">
       <screen x="0" y="23" width="2560" height="1337" />
@@ -267,59 +293,59 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1068" y="453" key="FileChooserDialogImpl/0.23.2560.1337@0.23.2560.1337" timestamp="1605105750944" />
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom" timestamp="1605645657647">
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom" timestamp="1605819915845">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657647" />
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915845" />
     <state width="939" height="280" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1605380106868" />
     <state width="2518" height="382" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605351649967" />
     <state width="549" height="280" key="GridCell.Tab.0.bottom/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372251334" />
-    <state width="1638" height="346" key="GridCell.Tab.0.center" timestamp="1605645657646">
+    <state width="1638" height="346" key="GridCell.Tab.0.center" timestamp="1605819915844">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657646" />
+    <state width="1638" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915844" />
     <state width="939" height="280" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1605380106868" />
     <state width="2518" height="382" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605351649966" />
     <state width="549" height="280" key="GridCell.Tab.0.center/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372251333" />
-    <state width="1638" height="346" key="GridCell.Tab.0.left" timestamp="1605645657646">
+    <state width="1638" height="346" key="GridCell.Tab.0.left" timestamp="1605819915844">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657646" />
+    <state width="1638" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915844" />
     <state width="939" height="280" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1605380106867" />
     <state width="2518" height="382" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605351649965" />
     <state width="549" height="280" key="GridCell.Tab.0.left/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372251333" />
-    <state width="1638" height="346" key="GridCell.Tab.0.right" timestamp="1605645657647">
+    <state width="1638" height="346" key="GridCell.Tab.0.right" timestamp="1605819915845">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657647" />
+    <state width="1638" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915845" />
     <state width="939" height="280" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1605380106868" />
     <state width="2518" height="382" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605351649966" />
     <state width="549" height="280" key="GridCell.Tab.0.right/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372251334" />
-    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1605645657804">
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom" timestamp="1605819915846">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657804" />
+    <state width="1638" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915846" />
     <state width="939" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1605372516277" />
     <state width="2518" height="470" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605350309769" />
     <state width="549" height="346" key="GridCell.Tab.1.bottom/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605371971858" />
-    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1605645657804">
+    <state width="1638" height="346" key="GridCell.Tab.1.center" timestamp="1605819915846">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657804" />
+    <state width="1638" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915846" />
     <state width="939" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1605372516277" />
     <state width="2518" height="470" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605350309769" />
     <state width="549" height="346" key="GridCell.Tab.1.center/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605371971858" />
-    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1605645657803">
+    <state width="1638" height="346" key="GridCell.Tab.1.left" timestamp="1605819915845">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657803" />
+    <state width="1638" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915845" />
     <state width="939" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1605372516277" />
     <state width="2518" height="470" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605350309769" />
     <state width="549" height="346" key="GridCell.Tab.1.left/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605371971857" />
-    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1605645657804">
+    <state width="1638" height="346" key="GridCell.Tab.1.right" timestamp="1605819915846">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1605645657804" />
+    <state width="1638" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1605819915846" />
     <state width="939" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1605372516277" />
     <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605350309769" />
     <state width="549" height="346" key="GridCell.Tab.1.right/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605371971858" />
@@ -327,25 +353,26 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1605431962396" />
-    <state x="578" y="336" key="Vcs.Push.Dialog.v2" timestamp="1605525418044">
+    <state x="578" y="336" key="Vcs.Push.Dialog.v2" timestamp="1605646267959">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="578" y="336" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1605646267959" />
     <state x="880" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605348805365" />
     <state x="578" y="336" key="Vcs.Push.Dialog.v2/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605525418044" />
-    <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605638195714">
+    <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605805801927">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1605638195714" />
+    <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1605805801927" />
     <state x="1081" y="612" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605348794861" />
     <state x="709" y="475" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605372277537" />
     <state x="945" y="326" key="run.anything.popup" timestamp="1605105748236">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="945" y="326" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1605105748236" />
-    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1605645019143">
+    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1605808706300">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1605645019143" />
+    <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1605808706300" />
     <state x="527" y="250" width="670" height="676" key="search.everywhere.popup/1680.23.1016.723/0.23.1680.1027@0.23.1680.1027" timestamp="1605525974955" />
     <state x="1010" y="610" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605202729994">
       <screen x="0" y="23" width="2560" height="1337" />
@@ -359,6 +386,11 @@
           <url>file://$PROJECT_DIR$/main.c</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/get_next_line.c</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

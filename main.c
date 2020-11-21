@@ -8,6 +8,10 @@ int main() {
 	fd = open("/Users/igorkovalenko/CLionProjects/GNL/123.txt", O_RDONLY);
 	printf("%d\n", fd);
 	get_next_line(fd, &a);
+	printf("%s\n\n", a);
+	get_next_line(fd, &a);
+	printf("%s\n", a);
+	get_next_line(fd, &a);
 	printf("%s", a);
 	return 0;
 }
