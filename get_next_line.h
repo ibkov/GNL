@@ -13,12 +13,20 @@
 #ifndef GNL_GET_NEXT_LINE_H
 #define GNL_GET_NEXT_LINE_H
 
-
+#include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include "libft/libft.h"
 
 int get_next_line(int fd, char **line);
+char    *ft_strdup(const char *s1);
+char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strchr(const char *string, int symbol);
+int    ft_strlen(const char *str);
+void    ft_bzero(void *s, size_t n);
+void    *ft_calloc(size_t count, size_t size);
+size_t		ft_strlcpy(char *restrict dst,\
+const char *restrict src, size_t dstsize);
+
 #define BUFFER_SIZE 30
 
 #endif //GNL_GET_NEXT_LINE_H
