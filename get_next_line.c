@@ -40,6 +40,7 @@ int get_next_line(int fd, char **line) {
 	int read_number;
 	char *p_n;
 	static char *last;
+	char *temp;
 
 	p_n = ft_check_last(last, line);
 	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE))) {
@@ -49,7 +50,9 @@ int get_next_line(int fd, char **line) {
 			p_n++;
 			last = ft_strdup(p_n);
 		}
+		temp = *line;
 		*line = ft_strjoin(*line, buffer);
+		free(temp);
 	}
 	if (read_number || ft_strlen(last) || ft_strlen(*line))
 		return (1);
