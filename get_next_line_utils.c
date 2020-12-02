@@ -98,23 +98,16 @@ void    *ft_calloc(size_t count, size_t size)
 	return (s);
 }
 
-size_t		ft_strlcpy(char *restrict dst,\
-const char *restrict src, size_t dstsize)
+void    ft_strcpy(char *restrict dst,\
+const char *restrict src)
 {
-	size_t	len;
-
 	if (!dst && !src)
-		return (0);
-	len = (size_t)ft_strlen(src);
-	if (dstsize == 0)
-		return (len);
-	while (*src && dstsize > 1)
+		return;
+	while (*src)
 	{
 		*dst = *src;
 		dst++;
 		src++;
-		dstsize--;
 	}
 	*dst = '\0';
-	return (len);
 }

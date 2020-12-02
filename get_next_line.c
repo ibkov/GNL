@@ -23,7 +23,7 @@ char *ft_check_last(char *last, char **line)
 			*p_n = '\0';
 			*line = ft_strdup(last);
 			p_n++;
-			last = (char*)ft_strlcpy(last, p_n, ft_strlen(p_n));
+			ft_strcpy(last, p_n);
 		}
 		else
 		{
@@ -42,7 +42,7 @@ int get_next_line(int fd, char **line) {
 	static char *last;
 	char *temp;
 
-	if (fd < 0 || !line)
+	if (fd < 0 || !line || BUFFER_SIZE < 1)
 		return (-1);
 	p_n = ft_check_last(last, line);
 	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE))) {

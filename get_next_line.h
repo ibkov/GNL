@@ -24,9 +24,7 @@ char    *ft_strchr(const char *string, int symbol);
 int    ft_strlen(const char *str);
 void    ft_bzero(void *s, size_t n);
 void    *ft_calloc(size_t count, size_t size);
-size_t		ft_strlcpy(char *restrict dst,\
-const char *restrict src, size_t dstsize);
-
-#define BUFFER_SIZE 30
+void    ft_strcpy(char *restrict dst,\
+const char *restrict src);
 
 #endif //GNL_GET_NEXT_LINE_H
