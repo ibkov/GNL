@@ -56,8 +56,7 @@ int get_next_line(int fd, char **line) {
 		*line = ft_strjoin(*line, buffer);
 		free(temp);
 	}
-	if (read_number || ft_strlen(last))
+	if (p_n)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
