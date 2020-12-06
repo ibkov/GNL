@@ -50,6 +50,7 @@ int get_next_line(int fd, char **line) {
 		if ((p_n = ft_strchr(buffer, '\n'))) {
 			*p_n = '\0';
 			p_n++;
+			free(last);
 			last = ft_strdup(p_n);
 		}
 		temp = *line;
