@@ -6,15 +6,39 @@
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 17:53:28 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:53:32 by burswyck         ###   ########.fr       */
+/*   Updated: 2020/12/08 22:46:10 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char *ft_check_last(char *last, char **line)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char *p_n;
+	char	*s;
+
+	if (!(s = (char *)malloc(count * size)))
+		return (0);
+	ft_bzero(s, count * size);
+	return (s);
+}
+
+void	ft_strcpy(char *restrict dst,\
+const char *restrict src)
+{
+	if (!dst && !src)
+		return ;
+	while (*src)
+	{
+		*dst = *src;
+		dst++;
+		src++;
+	}
+	*dst = '\0';
+}
+
+char	*ft_check_last(char *last, char **line)
+{
+	char	*p_n;
 
 	p_n = NULL;
 	if (last)
@@ -31,23 +55,26 @@ char *ft_check_last(char *last, char **line)
 			*last = '\0';
 		}
 	else
-		*line = ft_calloc(1,1);
+		*line = ft_calloc(1, 1);
 	return (p_n);
 }
 
-int get_next_line(int fd, char **line) {
-	char buffer[BUFFER_SIZE + 1];
-	int read_number;
-	char *p_n;
-	static char *last;
-	char *temp;
+int		get_next_line(int fd, char **line)
+{
+	char			buffer[BUFFER_SIZE + 1];
+	int				read_number;
+	char			*p_n;
+	static char		*last;
+	char			*temp;
 
 	if (fd < 0 || !line || BUFFER_SIZE < 1)
 		return (-1);
 	p_n = ft_check_last(last, line);
-	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE))) {
+	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE)))
+	{
 		buffer[read_number] = '\0';
-		if ((p_n = ft_strchr(buffer, '\n'))) {
+		if ((p_n = ft_strchr(buffer, '\n')))
+		{
 			*p_n = '\0';
 			p_n++;
 			free(last);
@@ -57,7 +84,5 @@ int get_next_line(int fd, char **line) {
 		*line = ft_strjoin(*line, buffer);
 		free(temp);
 	}
-	if (p_n)
-		return (1);
-	return (0);
+	return (p_n) ? 1 : 0;
 }

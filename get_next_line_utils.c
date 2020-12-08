@@ -6,16 +6,16 @@
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 17:54:15 by burswyck          #+#    #+#             */
-/*   Updated: 2020/11/11 17:54:17 by burswyck         ###   ########.fr       */
+/*   Updated: 2020/12/08 22:51:43 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char    *ft_strdup(const char *s1)
+char		*ft_strdup(const char *s1)
 {
-	char    *str;
-	char    *new_str;
+	char	*str;
+	char	*new_str;
 
 	if (!(str = malloc(sizeof(char) * ft_strlen(s1) + 1)))
 		return (0);
@@ -26,11 +26,10 @@ char    *ft_strdup(const char *s1)
 	return (new_str);
 }
 
-
-char    *ft_strjoin(char const *s1, char const *s2)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
-	char    *str_joined;
-	int        len_all_str;
+	char	*str_joined;
+	int		len_all_str;
 
 	if (!s1 || !s2)
 		return (0);
@@ -45,7 +44,7 @@ char    *ft_strjoin(char const *s1, char const *s2)
 	return (str_joined - len_all_str);
 }
 
-char    *ft_strchr(const char *string, int symbol)
+char		*ft_strchr(const char *string, int symbol)
 {
 	while (*string != symbol && *string)
 	{
@@ -58,10 +57,9 @@ char    *ft_strchr(const char *string, int symbol)
 	return ((char*)string);
 }
 
-
-int    ft_strlen(const char *str)
+int			ft_strlen(const char *str)
 {
-	int        i;
+	int		i;
 
 	i = 0;
 	if (!str)
@@ -73,10 +71,9 @@ int    ft_strlen(const char *str)
 	return (i);
 }
 
-
-void    ft_bzero(void *s, size_t n)
+void		ft_bzero(void *s, size_t n)
 {
-	char *str;
+	char	*str;
 
 	str = (char*)s;
 	while (n > 0)
@@ -85,29 +82,4 @@ void    ft_bzero(void *s, size_t n)
 		str++;
 		n--;
 	}
-}
-
-
-void    *ft_calloc(size_t count, size_t size)
-{
-	char    *s;
-
-	if (!(s = (char *)malloc(count * size)))
-		return (0);
-	ft_bzero(s, count * size);
-	return (s);
-}
-
-void    ft_strcpy(char *restrict dst,\
-const char *restrict src)
-{
-	if (!dst && !src)
-		return;
-	while (*src)
-	{
-		*dst = *src;
-		dst++;
-		src++;
-	}
-	*dst = '\0';
 }
