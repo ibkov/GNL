@@ -62,7 +62,7 @@ char	*ft_check_last(char *last, char **line)
 int		get_next_line(int fd, char **line)
 {
 	char			buffer[BUFFER_SIZE + 1];
-	int				read_number;
+	int				rn;
 	char			*p_n;
 	static char		*last;
 	char			*temp;
@@ -70,9 +70,11 @@ int		get_next_line(int fd, char **line)
 	if (fd < 0 || !line || BUFFER_SIZE < 1)
 		return (-1);
 	p_n = ft_check_last(last, line);
-	while (!p_n && (read_number = read(fd, buffer, BUFFER_SIZE)))
+	while (!p_n && (rn = read(fd, buffer, BUFFER_SIZE)))
 	{
-		buffer[read_number] = '\0';
+		if (rn == -1)
+			return (-1);
+		buffer[rn] = '\0';
 		if ((p_n = ft_strchr(buffer, '\n')))
 		{
 			*p_n = '\0';
