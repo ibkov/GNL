@@ -45,13 +45,13 @@ char	*ft_check_last(char *last, char **line)
 		if ((p_n = ft_strchr(last, '\n')))
 		{
 			*p_n = '\0';
-			*line = ft_strdup(last);
+			ft_strdup(last, line);
 			p_n++;
 			ft_strcpy(last, p_n);
 		}
 		else
 		{
-			*line = ft_strdup(last);
+			ft_strdup(last, line);
 			*last = '\0';
 		}
 	else
@@ -80,7 +80,7 @@ int		get_next_line(int fd, char **line)
 			*p_n = '\0';
 			p_n++;
 			free(last);
-			last = ft_strdup(p_n);
+			ft_strdup(p_n, &last);
 		}
 		temp = *line;
 		*line = ft_strjoin(*line, buffer);

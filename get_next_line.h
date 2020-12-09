@@ -20,7 +20,7 @@
 #endif
 
 int		get_next_line(int fd, char **line);
-char	*ft_strdup(const char *s1);
+void    ft_strdup(const char *s1, char **line);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *string, int symbol);
 int		ft_strlen(const char *str);

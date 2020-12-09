@@ -38,13 +38,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="add files get_next_line.c get_next_line.h get_next_line_utils.c">
+    <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="correct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_next_line_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_output_buff_16_one_big_fat_line.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user_output_buff_16_one_big_fat_line.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605975911895</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="correct">
+      <created>1607544519914</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607544519914</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +295,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add files get_next_line.c get_next_line.h get_next_line_utils.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files get_next_line.c get_next_line.h get_next_line_utils.c" />
+    <MESSAGE value="correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
