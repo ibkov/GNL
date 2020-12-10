@@ -38,8 +38,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="correct">
+    <list default="true" id="24e66262-bd44-4c74-b4ae-a67cb2dd7ca5" name="Default Changelist" comment="last worked">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/get_next_line.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +93,13 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.GNL (1)">
+  <component name="RunManager" selected="CMake Application.GNL (2)">
     <configuration name="GNL (1)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GNL (3)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="GNL (2)" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GNL" RUN_TARGET_NAME="GNL" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -140,19 +142,19 @@
     <list>
       <item itemvalue="CMake Application.GNL" />
       <item itemvalue="CMake Application.Unnamed" />
-      <item itemvalue="CMake Application.GNL (3)" />
       <item itemvalue="CMake Application.GNL (4)" />
       <item itemvalue="CMake Application.GNL (5)" />
       <item itemvalue="CMake Application.GNL (6)" />
       <item itemvalue="CMake Application.GNL (1)" />
+      <item itemvalue="CMake Application.GNL (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="CMake Application.GNL (2)" />
         <item itemvalue="CMake Application.GNL (1)" />
         <item itemvalue="CMake Application.GNL (6)" />
         <item itemvalue="CMake Application.GNL (5)" />
         <item itemvalue="CMake Application.GNL (4)" />
-        <item itemvalue="CMake Application.GNL (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -176,6 +178,7 @@
       <workItem from="1605805786373" duration="2147000" />
       <workItem from="1605808482522" duration="2097000" />
       <workItem from="1607018262957" duration="11576000" />
+      <workItem from="1607612744753" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="add files get_next_line.c get_next_line.h get_next_line_utils.c">
       <created>1605123917257</created>
@@ -254,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607544519914</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="last worked">
+      <created>1607612675139</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607612675139</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +297,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add files get_next_line.c get_next_line.h get_next_line_utils.c" />
     <MESSAGE value="correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct" />
+    <MESSAGE value="last worked" />
+    <option name="LAST_COMMIT_MESSAGE" value="last worked" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
