@@ -12,14 +12,12 @@
 
 #include "get_next_line.h"
 
-void	*ft_calloc(size_t count, size_t size)
+int     ft_calloc(char **line)
 {
-	char	*s;
-
-	if (!(s = (char *)malloc(count * size)))
+	if (!(*line = (char *)malloc(sizeof(char) * 1)))
 		return (0);
-	ft_bzero(s, count * size);
-	return (s);
+	*line[0] = '\0';
+	return (1);
 }
 
 void	ft_strcpy(char *restrict dst,\
@@ -45,17 +43,17 @@ char	*ft_check_last(char *last, char **line)
 		if ((p_n = ft_strchr(last, '\n')))
 		{
 			*p_n = '\0';
-			ft_strdup(last, line);
+			*line = ft_strdup(last);
 			p_n++;
 			ft_strcpy(last, p_n);
 		}
 		else
 		{
-			ft_strdup(last, line);
+			*line = ft_strdup(last);
 			*last = '\0';
 		}
 	else
-		*line = ft_calloc(1, 1);
+		ft_calloc(line);
 	return (p_n);
 }
 
@@ -79,8 +77,9 @@ int		get_next_line(int fd, char **line)
 		{
 			*p_n = '\0';
 			p_n++;
-			free(last);
-			ft_strdup(p_n, &last);
+			temp = last;
+			last = ft_strdup(p_n);
+			free(temp);
 		}
 		temp = *line;
 		*line = ft_strjoin(*line, buffer);

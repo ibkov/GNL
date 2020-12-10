@@ -12,18 +12,18 @@
 
 #include "get_next_line.h"
 
-void		ft_strdup(const char *s1, char **line)
+char		*ft_strdup(const char *s1)
 {
 	char	*str;
 	char	*new_str;
 
 	if (!(str = malloc(sizeof(char) * ft_strlen(s1) + 1)))
-		return ;
+		return (0);
 	new_str = str;
 	while (*s1)
 		*str++ = *s1++;
 	*str = '\0';
-	*line = new_str;
+	return (new_str);
 }
 
 char		*ft_strjoin(char const *s1, char const *s2)
@@ -69,17 +69,4 @@ int			ft_strlen(const char *str)
 		i++;
 	}
 	return (i);
-}
-
-void		ft_bzero(void *s, size_t n)
-{
-	char	*str;
-
-	str = (char*)s;
-	while (n > 0)
-	{
-		*str = '\0';
-		str++;
-		n--;
-	}
 }
