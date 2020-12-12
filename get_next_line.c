@@ -6,13 +6,13 @@
 /*   By: burswyck <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/11 17:53:28 by burswyck          #+#    #+#             */
-/*   Updated: 2020/12/08 22:46:10 by burswyck         ###   ########.fr       */
+/*   Updated: 2020/12/10 20:37:22 by burswyck         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int     ft_calloc(char **line)
+int		ft_calloc(char **line)
 {
 	if (!(*line = (char *)malloc(sizeof(char) * 1)))
 		return (0);
@@ -76,9 +76,8 @@ int		get_next_line(int fd, char **line)
 		if ((p_n = ft_strchr(buffer, '\n')))
 		{
 			*p_n = '\0';
-			p_n++;
 			temp = last;
-			last = ft_strdup(p_n);
+			last = ft_strdup(++p_n);
 			free(temp);
 		}
 		temp = *line;
