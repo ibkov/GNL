@@ -18,20 +18,6 @@ int free_memory(char *buffer, int error)
 	return (error);
 }
 
-void	ft_strcpy(char *restrict dst,\
-const char *restrict src)
-{
-	if (!dst && !src)
-		return ;
-	while (*src)
-	{
-		*dst = *src;
-		dst++;
-		src++;
-	}
-	*dst = '\0';
-}
-
 char	*ft_check_last(char *last)
 {
 	int		i;
