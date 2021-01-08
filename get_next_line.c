@@ -12,6 +12,12 @@
 
 #include "get_next_line.h"
 
+int free_memory(char *buffer, int error)
+{
+	free(buffer);
+	return (error);
+}
+
 void	ft_strcpy(char *restrict dst,\
 const char *restrict src)
 {
@@ -26,76 +32,72 @@ const char *restrict src)
 	*dst = '\0';
 }
 
-char	*ft_check_last(char *last, char **line)
+char	*ft_check_last(char *last)
 {
-	char	*p_n;
+	int		i;
+	int		j;
+	char	*clear;
 
-	p_n = NULL;
-	if (last)
-		if ((p_n = ft_strchr(last, '\n')))
-		{
-			*p_n = '\0';
-			if (!(*line = ft_strdup(last)))
-				return (0);
-			p_n++;
-			ft_strcpy(last, p_n);
-		}
-		else
-		{
-			if (!(*line = ft_strdup(last)))
-				return (0);
-			*last = '\0';
-		}
-	else
-		if (!(ft_calloc(line)))
-			return (0);
-	return (p_n);
-}
-
-int	free_join_line(char **line, char *buffer)
-{
-	char	*temp;
-
-	temp = *line;
-	if (!(*line = ft_strjoin(*line, buffer)))
+	i = 0;
+	j = 0;
+	if (!last)
 		return (0);
-	free(temp);
-	return (1);
+	while (last[i] && last[i] != '\n')
+		i++;
+	if (!last[i])
+		return free_memory(last, 0);
+	if (!(clear = malloc(sizeof(char) * ((ft_strlen(last) - i) + 1))))
+		return (0);
+	i++;
+	while (last[i])
+		clear[j++] = last[i++];
+	clear[j] = '\0';
+	free(last);
+	return (clear);
 }
 
-char *free_mem(char *p_n, char *last)
+char *to_line(char *last)
 {
+	int count_ch;
 	char *temp;
 
-	*p_n = '\0';
-	temp = last;
-	if (!(last = ft_strdup(++p_n)))
+	count_ch = 0;
+	if (!last)
 		return (0);
-	free(temp);
-	return (last);
+	while (last[count_ch] && last[count_ch] != '\n')
+		count_ch++;
+	if (!(temp = (char*)malloc(sizeof(char) * (count_ch + 1))))
+		return (0);
+	count_ch = 0;
+	while (last[count_ch] && last[count_ch] != '\n')
+	{
+	temp[count_ch] = last[count_ch];
+	count_ch++;
+	}
+	temp[count_ch] = '\0';
+	return temp;
 }
 
 int		get_next_line(int fd, char **line)
 {
-	char			buffer[((BUFFER_SIZE) < 1) ? (1) : (BUFFER_SIZE + 1)];
-	int				rn;
-	char			*p_n;
+	char			*buffer;
 	static char		*last;
+	int				fl_read;
 
+	fl_read = 1;
 	if (fd < 0 || !line || BUFFER_SIZE < 1)
 		return (-1);
-	p_n = ft_check_last(last, line);
-	while (!p_n && (rn = read(fd, buffer, BUFFER_SIZE)))
+	if (!(buffer = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
+		return (-1);
+	while (fl_read != 0 && !ft_strchr(last, '\n'))
 	{
-		if (rn == -1)
-			return (-1);
-		buffer[rn] = '\0';
-		if ((p_n = ft_strchr(buffer, '\n')))
-		{
-			last = free_mem(p_n, last);
-		}
-		if (!(free_join_line(line, buffer)))
-			return (-1);
+		if ((fl_read = read(fd, buffer, BUFFER_SIZE)) == -1)
+			return free_memory(buffer, -1);
+		buffer[fl_read] = '\0';
+		last = ft_strjoin(last, buffer);
 	}
-	return (p_n) ? 1 : 0;
+	free(buffer);
+	*line = to_line(last);
+	last = ft_check_last(last);
+	return (!fl_read) ? 0 : 1;
 }

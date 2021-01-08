@@ -12,26 +12,28 @@
 
 #include "get_next_line.h"
 
-int		ft_calloc(char **line)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (!(*line = (char *)malloc(sizeof(char) * 1)))
-		return (0);
-	*line[0] = '\0';
-	return (1);
-}
+	unsigned char	*d;
+	unsigned char	*s;
 
-char		*ft_strdup(const char *s1)
-{
-	char	*str;
-	char	*new_str;
-
-	if (!(str = malloc(sizeof(char) * ft_strlen(s1) + 1)))
+	if (!dst && !src)
 		return (0);
-	new_str = str;
-	while (*s1)
-		*str++ = *s1++;
-	*str = '\0';
-	return (new_str);
+	d = (unsigned char*)dst;
+	s = (unsigned char*)src;
+	if (d < s)
+	{
+		while (len--)
+			*d++ = *s++;
+	}
+	else
+	{
+		d += len;
+		s += len;
+		while (len--)
+			*--d = *--s;
+	}
+	return (dst);
 }
 
 char		*ft_strjoin(char const *s1, char const *s2)
@@ -39,21 +41,22 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	char	*str_joined;
 	int		len_all_str;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (0);
 	len_all_str = ft_strlen(s1) + ft_strlen(s2);
 	if (!(str_joined = malloc(sizeof(str_joined) * (len_all_str) + 1)))
 		return (0);
-	while (*s1)
-		*str_joined++ = *s1++;
-	while (*s2)
-		*str_joined++ = *s2++;
-	*str_joined = '\0';
-	return (str_joined - len_all_str);
+	ft_memmove(str_joined, s1, ft_strlen(s1));
+	ft_memmove(str_joined + ft_strlen(s1), s2, ft_strlen(s2));
+	str_joined[len_all_str] = '\0';
+	free(s1);
+	return (str_joined);
 }
 
 char		*ft_strchr(const char *string, int symbol)
 {
+	if (!string)
+		return (0);
 	while (*string != symbol && *string)
 	{
 		string++;
