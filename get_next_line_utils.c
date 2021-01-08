@@ -36,7 +36,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str_joined;
 	int		len_all_str;
@@ -53,7 +53,7 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	return (str_joined);
 }
 
-char		*ft_strchr(const char *string, int symbol)
+char	*ft_strchr(const char *string, int symbol)
 {
 	if (!string)
 		return (0);
@@ -68,7 +68,7 @@ char		*ft_strchr(const char *string, int symbol)
 	return ((char*)string);
 }
 
-int			ft_strlen(const char *str)
+int		ft_strlen(const char *str)
 {
 	int		i;
 
